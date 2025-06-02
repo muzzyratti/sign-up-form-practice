@@ -1,3 +1,8 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(../sign-up-form-practice/fonts/norse-bold-webfont.woff) format("woff"); 
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,42 +25,142 @@ body {
   background: url('/sign-up-form-practice/images/halie-west-25xggax4bSA-unsplash.jpg') no-repeat center center;
   background-size: cover;
   color: white;
-  flex: 1;
+  flex: 0.7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 1rem;
+  background-color:rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  position: relative;
+  top: 20%;
 }
 
 .logo img {
-  height: 60px;
+  height: 100px;
 }
 
 .logo h1 {
-  font-size: 2rem;
+  font-family: norse-bold;
+  font-size: 5rem;
   letter-spacing: 2px;
 }
 
-.photo-credit {
-  font-size: 0.75rem;
-  opacity: 0.7;
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-size: 0.8rem;
+  color: rgb(170, 170, 170);
+}
+
+.left-panel a {
+  color: rgb(170, 170, 170);
 }
 
 /* Right panel */
 .right-panel {
   flex: 1;
   background: #f9fafb;
-  padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Right head */
+.right-head {
+  padding: 3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
-/* Form */
+.p-head {
+  margin-top: 20px;
+}
+
+.p-caption {
+ font-size: 1.3rem;
+ margin-bottom: 20px;
+}
+
+/* Right Form */
+.inputs {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.form-inputs-box {
+  display: flex;
+  gap: 3rem;
+}
+
+.form-inputs label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+}
+
+input {
+  width: 250px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+input:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+input:invalid[type='password'] {
+  border: solid 1px red;
+}
+
+input:valid[type='password'] {
+  border: solid 1px green;
+}
+
+.inputs-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right Bottom */
+.right-foot {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.create-acc {
+	background-color:#596d48;
+	border-radius:4px;
+	border:1px solid #596d48;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:bold;
+	padding:16px 38px;
+}
+
+.p-foot{
+  margin-top: 30px;
+}
+
+.right-foot a {
+  color: #596d48;
+}
