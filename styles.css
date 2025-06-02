@@ -124,9 +124,7 @@ input:invalid[type='password'] {
   border: solid 1px red;
 }
 
-input:valid[type='password'] {
-  border: solid 1px green;
-}
+
 
 .inputs-left {
   display: flex;
